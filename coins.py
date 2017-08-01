@@ -17,6 +17,7 @@ def coins():
         elif round(random.random()) == 0:
             heads += 1
             print "Attempt #{}: Throwing a coin... It's a heads! ... Got {} head(s) so far and {} tail(s) so far".format(i+1,tails,heads)
+    print "Ending the program, thank you!"
 
 
 coins()
