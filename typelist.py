@@ -1,5 +1,5 @@
 
-typelist = ['magical','unicorns']
+typelist = ['magical unicorns',19,'hello',98.98,'world']
 newstring = ""
 runningsum = 0
 
@@ -17,17 +17,31 @@ for item in typelist:
         runningsum += item
         numbercount += 1
 
-#use a count to determine type of list        
-if stringcount + numbercount == stringcount:
-    stringtype = "string"
-if stringcount + numbercount == numbercount:
-    stringtype = "number"
-else:
-    stringtype = "mixed"
+if newstring and runningsum:
+    print "this is the new string:", newstring
+    print "this is the running sum:", runningsum
+    print "the list you entered is of mixed type" 
+
+elif newstring:
+    print "this is the new string:", newstring
+    print "the list you entered is of string type"
+
+elif runningsum:
+    print "this is the running sum:", runningsum
+    print "the list you entered is of number type"
+
+# #use a count to determine type of list        
+# if stringcount + numbercount == stringcount:
+#     stringtype = "string"
+# if stringcount + numbercount == numbercount:
+#     stringtype = "number"
+# else:
+#     stringtype = "mixed"
 
 
 
-print "this is the new string:", newstring
-print "this is the running sum:", runningsum
-print "the list you entered is of "+ stringtype +"type"
+# print "this is the new string:", newstring
+# print "this is the running sum:", runningsum
+# print "the list you entered is of "+ stringtype +"type"
 
+#this is how the platform did the check on the list"

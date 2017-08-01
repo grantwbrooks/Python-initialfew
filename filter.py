@@ -28,14 +28,14 @@ if type(x) == int:
         print "That's a small number"
 
 #if string do this
-elif type(x) == str:
+if type(x) == str:
     if len(x) >= 50:
         print "Long sentence."
     else:
         print "Short sentence."
 
 #if list do this
-elif type(x) == list:
+if type(x) == list:
     if len(x) >= 10:
         print "Big list!"
     else: 
