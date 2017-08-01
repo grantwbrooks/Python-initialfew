@@ -13,3 +13,5 @@ new_list = filter(None,map(checkchar, word_list))
 print new_list
 # print filter(None,new_list)
 
+#Could have used the word_list.find(char) function for parts of this instead of the function I wrote above
+
