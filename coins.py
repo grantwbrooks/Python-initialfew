@@ -10,11 +10,12 @@ def coins():
     
     print "Starting the program..."
     for i in range(0,5000):
-        if round(random.random()) == 1:
+        x = round(random.random())
+        if x == 1:
             tails += 1
             print "Attempt #{}: Throwing a coin... It's a tails! ... Got {} head(s) so far and {} tail(s) so far".format(i+1,heads,tails)
             "Tails", tails
-        elif round(random.random()) == 0:
+        elif x == 0:
             heads += 1
             print "Attempt #{}: Throwing a coin... It's a heads! ... Got {} head(s) so far and {} tail(s) so far".format(i+1,tails,heads)
     print "Ending the program, thank you!"

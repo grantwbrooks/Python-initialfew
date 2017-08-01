@@ -8,7 +8,7 @@ context = {
  }
 
 for key, data in context.items():
-    print data
-    # for value in data:
-    #     print "Question #", value["id"], ": ", value["content"]
-    #     print "----"
+    # print data
+    for value in data:
+        print "Question #", value["id"], ": ", value["content"]
+        print "----"
