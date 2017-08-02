@@ -35,7 +35,8 @@ users = {
 
 def both(dict):
     for key, data in dict.items():
-        # print data
+        print key
+        print data
         count = 0
         print key
         for value in data:
